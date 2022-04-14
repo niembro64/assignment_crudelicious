@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using assignment_crudelicious.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace assignment_crudelicious
 {
@@ -22,6 +24,7 @@ namespace assignment_crudelicious
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+             services.AddDbContext<MyContext>(options => options.UseMySql (Configuration["DBInfo:ConnectionString"]));
             services.AddControllersWithViews();
         }
 
