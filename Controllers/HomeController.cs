@@ -38,6 +38,8 @@ namespace assignment_crudelicious.Controllers
     {
       if (ModelState.IsValid)
       {
+          _context.Add(newPet);
+          _context.SaveChanges();
         return RedirectToAction("Index");
       }
       else
