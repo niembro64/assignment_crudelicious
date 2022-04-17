@@ -14402,6 +14402,11 @@
   "RootNamespace": "assignment_crudelicious",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\nieme\\Documents\\CodingDojo\\CSharpStack2022\\2.3\\assignment_crudelicious\\Views\\Home\\EditPet.cshtml",
+      "TargetPath": "Views\\Home\\EditPet.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nieme\\Documents\\CodingDojo\\CSharpStack2022\\2.3\\assignment_crudelicious\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
