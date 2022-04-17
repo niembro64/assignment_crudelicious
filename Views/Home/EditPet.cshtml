@@ -11,14 +11,4 @@
         <span asp-validation-for="Species"></span>
         <input type="submit" value="Submit" class="btn btn-primary my-3">
     </form>
-    <ul>
-        @foreach (Pet p in ViewBag.AllPets)
-        {
-            <li>
-                <span>@p.Name the @p.Species</span>
-                <span><a href="/pets/remove/@p.PetId">Remove</a></span>
-                <span><a href="/pets/edit/@p.PetId">Update</a></span>
-            </li>
-        }
-    </ul>
 </div>
